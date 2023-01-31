@@ -1,0 +1,75 @@
+:root {
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%);
+}
+* {
+  font-family: "Manrope", sans-serif;
+}
+body {
+  background-color: var(--DarkBlue);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  background-color: var(--DarkGrayishBlue);
+  height: auto;
+  width: 25rem;
+  border-radius: 20px;
+  text-align: center;
+  align-items: center;
+  padding: 20px 50px;
+  height: auto; /* sets the height of the element to half of the viewport height */
+  width: 50vh; /* sets the width of the element to half of the viewport height */
+  margin: calc(50vh - 25vh) auto;
+}
+
+.card-advice p {
+  color: var(--NeonGreen);
+}
+.card-advice h2 {
+  font-size: 1.75rem;
+  color: var(--LightCyan);
+}
+.divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  background-color: var(--NeonGreen);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.circle:hover {
+  -webkit-box-shadow: -1px 1px 197px 16px rgba(82, 255, 168, 1);
+  -moz-box-shadow: -1px 1px 197px 16px rgba(82, 255, 168, 1);
+  box-shadow: -1px 1px 197px 16px rgba(82, 255, 168, 1);
+}
+.image-container {
+  display: flex;
+  margin: 20px 0 0 0;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .body {
+    padding: 0 10px;
+    width: auto;
+  }
+  .card-advice {
+    font-size: 1rem;
+  }
+}
