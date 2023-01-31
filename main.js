@@ -4,19 +4,12 @@ const adviceContents = document.querySelector(".advice");
 const container = document.querySelector(".container");
 const btn = document.querySelector(".circle");
 
-btn.addEventListener("click", () => {
-  getAdviceData();
-});
-
-window.onload = () => {
-  getAdviceData();
-};
 const renderAdvice = function (adviceData) {
   const html = `<div class="card-advice">
     <p>Advice #<span class="advice-num">${adviceData.id}</span></p>
     <h2>"<span class="advice">${adviceData.advice}</span>"</h2>
   </div> `;
-  container.insertAdjacentHTML("beforeend", html);
+  container.insertAdjacentHTML("beforebegin", html);
 };
 
 const getAdviceData = function () {
@@ -35,3 +28,8 @@ const getAdviceData = function () {
       console.log(err);
     });
 };
+getAdviceData();
+
+btn.addEventListener("click", () => {
+  getAdviceData();
+});
