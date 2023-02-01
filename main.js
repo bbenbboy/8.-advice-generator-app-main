@@ -31,9 +31,6 @@ const getAdviceData = function () {
 };
 getAdviceData();
 
-function click() {
-  btn.addEventListener("click", () => {
-    getAdviceData();
-  });
-}
-click();
+btn.addEventListener("click", () => {
+  getAdviceData();
+});
