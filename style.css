@@ -22,7 +22,7 @@ body {
   border-radius: 20px;
   text-align: center;
   align-items: center;
-  padding: 20px 50px;
+  padding: 20px 50px 20px 50px;
   height: auto; /* sets the height of the element to half of the viewport height */
   width: 50vh; /* sets the width of the element to half of the viewport height */
   margin: calc(50vh - 25vh) auto;
@@ -50,6 +50,7 @@ body {
   justify-content: center;
   cursor: pointer;
   transition: 0.5s ease;
+  position: fixed;
 }
 .circle:hover {
   -webkit-box-shadow: -1px 1px 197px 16px rgba(82, 255, 168, 1);
